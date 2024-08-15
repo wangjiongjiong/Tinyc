@@ -40,7 +40,7 @@ FUNC @main:
 ENDFUNC
 
 FUNC @factor:
-	var n
+	arg n
 	_beg_if:
 		push n
 		push 2

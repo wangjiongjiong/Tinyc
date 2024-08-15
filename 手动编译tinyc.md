@@ -232,7 +232,7 @@ FUNC @main:
 ENDFUNC
 
 FUNC @factor:
-	var n
+	arg n
 	_beg_if:
 		push n
 		push 2
@@ -252,3 +252,8 @@ ENDFUNC
 			
 ```
 
+```
+python pysim.py factor.asm -a
+```
+
+可以执行调试查看
