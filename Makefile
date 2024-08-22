@@ -1,8 +1,7 @@
-run: word-spliter
-	./word-spliter < word-spliter.l
+out: scanner
 
-word-spliter: lex.yy.c
+scanner: lex.yy.c token.h
 	gcc -o $@ $<
 
-lex.yy.c: word-spliter.l
+lex.yy.c: scanner.l
 	flex $<
