@@ -7,7 +7,7 @@ void lex_error(char* msg,int line);
 /* Definitions, note: \042 is '"' */
 INTEGER              ([0-9]+)
 UNTERM_STRING        (\042[^\042\n]*)
-STRING				 (\042[^\042\n]\042)
+STRING				 (\042[^\042\n]*\042)
 IDENTIFIER           ([a-zA-Z][a-zA-Z0-9]*)
 OPERATOR             ([+*-/%=,;!<>(){}])
 SINGLE_COMMENT1      ("//"[^\n]*)
